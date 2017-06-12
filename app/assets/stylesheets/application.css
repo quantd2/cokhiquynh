@@ -11,6 +11,19 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require_self
  *= require 'bootstrap-sass-official'
+ *= require_self
  */
+
+body {
+  color: #fff;
+  background-image: url('/assets/stripe.png');
+}
+
+.video {
+  /*position: absolute;*/
+  width: 100%;
+  height: 50%;
+  opacity: .9;
+  transform: translate(0, -9%);  
+}

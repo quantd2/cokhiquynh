@@ -1,8 +1,39 @@
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
+  letter-spacing: 0.37em;
+  padding-top: 1em;
+  color: #fff;
+  background-image: url('/assets/stripe.png')
 }
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+li::before {
+    content: " | ";
+    color: #141414
+}
+
+li:first-child:before {
+  content: "";
+}
+
+.collapse > .nav > li > a {
+  display: inline;
+}
+
+@media screen and (max-width: 765px) {
+  .navbar .navbar-nav {
+    padding-top: 0px;
+  }
+
+  li::before {
+      content: "";
+  }
+
+  .collapse > .nav > li > a {
+    display: block;
+  }
 }

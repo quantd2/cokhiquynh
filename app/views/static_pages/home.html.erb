@@ -1,7 +1,13 @@
 <% provide(:title, 'Trang Chủ') %>
-<h1>Cơ Khí Quỳnh</h1>
-<p>
-This is the home page for the
-<a href="http://cokhiquynh.org/">Cơ Khí Quỳnh</a>
-sample application.
-</p>
+<div class="row">
+  <section id="opener">
+    <article>
+      <h1>cơ khí quỳnh</h1>
+      <p>sự hoàn hảo trong chi tiết</p>
+    </article>
+    <%= video_tag "home_video.mp4", autoplay: :autoplay,
+                                    loop: :loop,
+                                    mute: :mute,
+                                    class: "video" %>
+  </section>
+</div>
