@@ -1,10 +1,19 @@
+.navbar {
+  /*background-image: url('/assets/stripe.png');*/
+  border-radius: 0px;
+}
+
+.navbar-default {
+  border-color: transparent;
+  margin-bottom: 0px;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   letter-spacing: 0.37em;
   padding-top: 1em;
-  color: #fff;
-  background-image: url('/assets/stripe.png')
+  color: black;
 }
 
 .navbar .navbar-collapse {
@@ -13,7 +22,7 @@
 
 li::before {
     content: " | ";
-    color: #141414
+    color: black;
 }
 
 li:first-child:before {
@@ -22,6 +31,11 @@ li:first-child:before {
 
 .collapse > .nav > li > a {
   display: inline;
+  color: black;
+}
+
+.collapse > .nav > li > a:hover {
+  color: #777;
 }
 
 @media screen and (max-width: 765px) {
