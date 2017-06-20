@@ -18,7 +18,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  background-image: url('/assets/stripe.png');
+  /*background-image: url('/assets/stripe.pn');*/
+  background-image: url('https://c1.staticflickr.com/5/4202/35377550796_da14eee47c_o.png');
 }
 
 .summary h2 {
