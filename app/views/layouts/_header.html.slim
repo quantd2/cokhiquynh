@@ -1,18 +1,17 @@
-body
-  header.navbar.navbar-default role="navigation" 
-    .container
-      /! Brand and toggle get grouped for better mobile display
-      .navbar-header
-        = link_to "co khi quynh", root_path, class: "navbar-brand"
-        button.navbar-toggle data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button" 
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-      /! Collect the nav links, forms, and other content for toggling
-      .collapse.navbar-collapse.navbar-ex1-collapse
-        ul.nav.navbar-nav
-          li= link_to "TRANG CHỦ", root_path
-          li= link_to "SẢN PHẨM", static_pages_products_path
-          li= link_to "VỀ CHÚNG TÔI", static_pages_about_path
-      /! /.navbar-collapse
+header.navbar.navbar-default role="menu" 
+  .container
+    /! Brand and toggle get grouped for better mobile display
+    .navbar-header
+      = link_to "co khi quynh", root_path, class: "navbar-brand"
+      button.navbar-toggle data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button" 
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    /! Collect the nav links, forms, and other content for toggling
+    .collapse.navbar-collapse.navbar-ex1-collapse
+      ul.nav.navbar-nav
+        li= link_to "TRANG CHỦ", root_path
+        li= link_to "SẢN PHẨM", static_pages_products_path
+        li= link_to "VỀ CHÚNG TÔI", static_pages_about_path
+    /! /.navbar-collapse
