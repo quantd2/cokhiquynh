@@ -20,7 +20,11 @@
   text-align: center;
 }
 
-li::before {
+.navbar-nav li {
+  text-align: center;
+}
+
+.navbar-nav > li::before {
     content: " | ";
     color: black;
 }
@@ -43,7 +47,7 @@ li:first-child:before {
     padding-top: 0px;
   }
 
-  li::before {
+  .navbar-nav > li::before {
       content: "";
   }
 
