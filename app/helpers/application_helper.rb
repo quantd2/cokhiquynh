@@ -7,4 +7,8 @@ module ApplicationHelper
       "#{base_title} - #{page_title}"
     end
   end
+
+  def meta_description(desc = nil)
+    content_for :meta_description, desc
+  end
 end
