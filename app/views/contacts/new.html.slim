@@ -6,13 +6,15 @@ div.row
     p.about
       | Thành lập từ trước năm 1954, với kinh nghiệm 2 thế hệ, cơ khí quỳnh đảm bảo mang đến sự tin cậy hài lòng cho khách hàng.
         Sự tỉ mỉ, chính xác trong từng chi tiết là tiêu chí của chúng tôi.
-        Cơ khí Quỳnh hiện là một trong những nhà thầu của bệnh viện phụ sản Từ Dũ, khách sạn Novotel.
+      br
+      br
+      |  Cơ khí Quỳnh hiện là một trong những nhà thầu của bệnh viện phụ sản Từ Dũ, khách sạn Novotel.
   .col-lg-6
     h3 Để lại lời nhắn cho chúng tôi
-    = simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f|
-      = f.input :name, :required => true
-      = f.input :email, :required => true
-      = f.input :message, :as => :text, :required => true
+    = simple_form_for @contact, validate: true do |f|
+      = f.input :name, label: "tên", validate: true
+      = f.input :email, label: "hộp thư", validate: true
+      = f.input :message, :as => :text, label: "tin nhắn", validate: true
       .hidden
         = f.input :nickname, :hint => 'Leave this field blank!'
       div
