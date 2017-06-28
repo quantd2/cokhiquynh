@@ -7,12 +7,15 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://cokhiquynh.com/</loc>
+  <loc>https://cokhiquynh.herokuapp.com/</loc>
 </url>
 <url>
-  <loc>http://cokhiquynh.com/static-pages/products</loc>
+  <loc>https://cokhiquynh.herokuapp.com/static-pages/cokhichinhxac</loc>
 </url>
 <url>
-  <loc>http://cokhiquynh.com/static-pages/about</loc>
+  <loc>https://cokhiquynh.herokuapp.com/static-pages/cokhicongnghiep</loc>
+</url>
+<url>
+  <loc>https://cokhiquynh.herokuapp.com/contacts/new</loc>
 </url>
 </urlset>
