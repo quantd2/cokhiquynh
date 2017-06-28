@@ -1,0 +1,18 @@
+#home a{
+  color: white;
+}
+
+.summary h1 {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.summary h2 {
+  text-align: center;
+}
+
+.summary p {
+  text-align: center;
+  margin-bottom: 3em;
+}

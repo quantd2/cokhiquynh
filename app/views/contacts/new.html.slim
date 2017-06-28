@@ -1,21 +1,24 @@
 - provide(:title, 'Về Chúng Tôi')
 - meta_description "Chúng tôi gia công cơ khí tại Hồ Chí Minh."
-div.row
-  = image_tag "https://c1.staticflickr.com/5/4287/34607376883_510d53d3ba_o.jpg", class: "img-responsive"
-  .col-lg-6
-    p.about
-      | Thành lập từ trước năm 1954, với kinh nghiệm 2 thế hệ, cơ khí quỳnh đảm bảo mang đến sự tin cậy hài lòng cho khách hàng.
-        Sự tỉ mỉ, chính xác trong từng chi tiết là tiêu chí của chúng tôi.
-      br
-      br
-      |  Cơ khí Quỳnh hiện là một trong những nhà thầu của bệnh viện phụ sản Từ Dũ, khách sạn Novotel.
-  .col-lg-6
-    h3 Để lại lời nhắn cho chúng tôi
-    = simple_form_for @contact, validate: true do |f|
-      = f.input :name, label: "tên", validate: true
-      = f.input :email, label: "hộp thư", validate: true
-      = f.input :message, :as => :text, label: "tin nhắn", validate: true
-      .hidden
-        = f.input :nickname, :hint => 'Leave this field blank!'
-      div
-        = f.button :submit, 'Gửi', :class=> "btn btn-primary"
+.row
+  = image_tag "https://c1.staticflickr.com/5/4240/35394203632_209fa799b0_h.jpg", alt: "về cơ khí quỳnh", class: "img-responsive"
+  .col-sm-6
+    section#about
+      h1 Xưởng cơ khí tại Sài Gòn
+      p.about
+        | Thành lập từ trước năm 1954, với kinh nghiệm 2 thế hệ, cơ khí quỳnh đảm bảo mang đến sự tin cậy hài lòng cho khách hàng.
+          Sự tỉ mỉ, chính xác trong từng chi tiết là tiêu chí của chúng tôi.
+        br
+        br
+        |  Cơ khí Quỳnh hiện là một trong những nhà thầu của bệnh viện phụ sản Từ Dũ, khách sạn Novotel.
+  .col-sm-6
+    section#contact
+      h1 Để lại lời nhắn cho chúng tôi
+      = simple_form_for @contact, validate: true do |f|
+        = f.input :name, label: "tên", validate: true
+        = f.input :email, label: "hộp thư", validate: true
+        = f.input :message, :as => :text, label: "tin nhắn", validate: true
+        .hidden
+          = f.input :nickname, :hint => 'Leave this field blank!'
+        div
+          = f.button :submit, 'Gửi', :class=> "btn btn-primary"
