@@ -8,6 +8,10 @@
   margin-bottom: 0px;
 }
 
+.navbar-brand {
+  font-size: 24px;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
